@@ -1,0 +1,87 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+nav{
+  width: 100%;
+  height: 80px;
+  background-color: dodgerblue;  
+  color: #fff;
+
+}
+.collection{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content:space-evenly;
+
+}
+.item{
+    list-style-type: none;
+    font-size: 30px;
+    position: relative;
+    cursor: pointer;
+}
+.item:hover::after{
+    position: absolute;
+    content: 'hello';
+    width: 200px;
+    height: 40px;
+    background-color: #000;
+    bottom: -70px;
+    left: -90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+.item:hover::before{
+    content: '';
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    bottom: -30px;
+    display: flex;
+    left: -2px;
+    border-right: 15px solid transparent;
+    border-left: 15px solid transparent;
+    border-bottom: 25px solid #000;
+  }
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; 
+}
+ /* }
+.box{
+     width: 0;
+    height: 0;
+     border-right: 100px solid transparent; 
+     border-left: 100px solid transparent;
+    border-bottom: 150px solid dodgerblue; 
+     width: 200px;
+    height: 150px; 
+      background-color: dodgerblue;  
+     transform: skew(-30deg);
+     transform: perspective(200px) rotateX(50deg);
+    border-radius: 50%; 
+
+}
+.nav{
+    width: 130px;
+    height: 700px;
+    background-color: red;
+} 
+
+.fa-solid fa-qrcode{
+        width: 40px;
+        height: 40px;
+
+
+    }
+    .item{
+        font-size: 30px;
+    }  */
